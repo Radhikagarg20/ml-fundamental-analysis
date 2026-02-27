@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: ml-fundamental-api
+    env: python
+    buildCommand: "pip instal

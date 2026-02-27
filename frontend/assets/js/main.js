@@ -10,11 +10,7 @@ async function init() {
 
     document.getElementById("companyName").innerText = company;
 
-    showLoader();
-
-    const data = await fetchAnalysis(company);
-
-    hideLoader();
+const data = await fetchAnalysis(company);
 
     document.getElementById("score").innerText = data.score;
     document.getElementById("roce").innerText = data.metrics.roe + "%";

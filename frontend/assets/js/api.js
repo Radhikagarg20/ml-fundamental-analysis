@@ -8,11 +8,9 @@ async function fetchAnalysis(company) {
             throw new Error("Backend error");
         }
 
-        const data = await response.json();
-        return data;
-
+        return await response.json();
     } catch (error) {
-        console.error("Backend connection failed:", error);
+        console.error(error);
         alert("Failed to connect to backend.");
     }
 }

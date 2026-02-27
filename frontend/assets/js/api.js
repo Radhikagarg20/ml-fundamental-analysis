@@ -1,6 +1,25 @@
-const BASE_URL = "https://ml-fundamental-analysis.onrender.com";
+const API_BASE = "https://ml-fundamental-analysis.onrender.com";
 
 async function fetchAnalysis(company) {
-    const response = await fetch(`${BASE_URL}/analyze?id=${company}`);
-    return await response.json();
+    try {
+        const response = await fetch(`${API_BASE}/analyze?id=${company}`);
+
+        if (!response.ok) {
+            throw new Error("API request failed");
+        }
+
+        const data = await response.json();
+
+        if (data.error) {
+            alert(data.error);
+            return null;
+        }
+
+        return data;
+
+    } catch (error) {
+        console.error("Fetch error:", error);
+        alert("Failed to connect to backend.");
+        return null;
+    }
 }

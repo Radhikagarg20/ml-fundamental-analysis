@@ -5,21 +5,14 @@ async function fetchAnalysis(company) {
         const response = await fetch(`${API_BASE}/analyze?id=${company}`);
 
         if (!response.ok) {
-            throw new Error("API request failed");
+            throw new Error("Backend error");
         }
 
         const data = await response.json();
-
-        if (data.error) {
-            alert(data.error);
-            return null;
-        }
-
         return data;
 
     } catch (error) {
-        console.error("Fetch error:", error);
+        console.error("Backend connection failed:", error);
         alert("Failed to connect to backend.");
-        return null;
     }
 }

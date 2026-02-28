@@ -6,7 +6,7 @@
 
 ## 🖼 Application Preview
 
-![FinIntel AI Dashboard](assets/images/homepage.png)
+![FinIntel AI Dashboard](homepage.png)
 
 ---
 

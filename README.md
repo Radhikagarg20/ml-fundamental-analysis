@@ -10,6 +10,28 @@
 
 ---
 
+
+
+
+
+
+
+## 🖼 Application Preview
+
+<p align="center">
+  <img src="homepage.png" width="900">
+</p>
+
+---
+
+
+
+
+
+
+
+
+
 ## 🌐 Live Production Links
 
 🔹 **Frontend (Investor Dashboard)**  

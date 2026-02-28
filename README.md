@@ -33,10 +33,10 @@ The system:
 
 Retail investors often:
 
-- ❌ Struggle to interpret financial statements
-- ❌ Cannot quickly evaluate company fundamentals
-- ❌ Lack structured financial scoring tools
-- ❌ Depend on scattered financial data sources
+- Struggle to interpret financial statements
+- Cannot quickly evaluate company fundamentals
+- Lack structured financial scoring tools
+- Depend on scattered financial data sources
 
 There is a need for:
 

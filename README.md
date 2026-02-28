@@ -222,7 +222,7 @@ Automatically generates:
 
 # 🖥 Running Locally
 
-## Backend Setup
+## 🔹 Backend Setup
 
 ```bash
 cd backend
@@ -231,81 +231,80 @@ venv\Scripts\activate
 pip install -r requirements.txt
 python app.py
 
-Backend runs at: http://127.0.0.1:5000
-
-## Frontend Setup
-
-Open: frontend/index.html
-
-Or use Live Server extension.
+```
+Backend runs at:
+http://127.0.0.1:5000
+------
 
 
+## 🔹 Frontend Setup
+
+```bash
+cd frontend
+index.html
+```
+
+Frontend runs at (Live Server example):
+http://127.0.0.1:5500
+------
 
 
+# 🌍 Production Deployment
 
-🌍 Production Deployment
-🔹 Backend
+## 🔹 Backend
 
-Hosted on Render
+**Hosted on:** Render  
 
-GitHub connected
+- GitHub repository connected  
+- Automatic deployment enabled  
+- Public REST API endpoint exposed  
 
-Auto deployment enabled
-
-Public API endpoint
-
-Live API:
+**Live API:**  
 https://ml-fundamental-analysis.onrender.com/
 
-🔹 Frontend
+---
 
-Hosted on Netlify
+## 🔹 Frontend
 
-Static deployment
+**Hosted on:** Netlify  
 
-GitHub connected
+- Static site deployment  
+- GitHub repository connected  
+- Auto-redeploy on every push  
 
-Auto redeploy on push
-
-Live Dashboard:
+**Live Dashboard:**  
 https://finintel-ai.netlify.app/
 
-📈 Scalability Roadmap
+---
 
-Future improvements:
+# 📈 Scalability Roadmap
 
-PostgreSQL Database Integration
+Future improvements planned:
 
-User Authentication System
+- PostgreSQL database integration  
+- User authentication system  
+- Portfolio tracking module  
+- Real-time market API integration  
+- Cloud caching layer (Redis)  
+- Advanced ML model enhancement  
+- AI-generated financial reports  
+- Multi-company comparison engine  
 
-Portfolio Tracking
+---
 
-Real-time Market API Integration
+# 🏆 Achievements
 
-Cloud Caching Layer
+- ✔ Built a complete full-stack ML financial platform  
+- ✔ Designed investor-grade responsive UI  
+- ✔ Implemented custom financial scoring engine  
+- ✔ Successfully deployed backend & frontend in production  
+- ✔ Resolved CORS and cross-origin deployment challenges  
+- ✔ Structured scalable modular architecture  
 
-Advanced ML Models
+---
 
-AI-based Financial Reports
-
-Multi-company comparison engine
-
-🏆 Achievements
-
-✔ Built full-stack ML financial platform
-✔ Designed investor-grade UI
-✔ Implemented financial scoring engine
-✔ Deployed backend & frontend in production
-✔ Solved CORS & deployment challenges
-✔ Implemented scalable architecture
-
-📊 Result
+# 📊 Result
 
 FinIntel AI transforms complex financial data into:
 
-A simplified, AI-powered financial intelligence system ready for production scaling.
-
-
-
-
-
+> A simplified, AI-powered financial intelligence system ready for production-level scaling.

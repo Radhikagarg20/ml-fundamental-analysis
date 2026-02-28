@@ -1,11 +1,14 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
+
 from src.api.fetch_data import fetch_company_data
 from src.processing.metrics_builder import build_metrics
 from src.ml_engine.scoring import calculate_financial_score
 from src.ml_engine.insight_generator import generate_insights
-from flask_cors import CORS
+
 app = Flask(__name__)
-CORS(app)
+
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 def classify_score(score):
     if score > 30:

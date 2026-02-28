@@ -1,83 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Company Analysis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Analysis</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="bg-[#0B1120] text-gray-100">
-    <body class="bg-darkbg text-gray-100 animate-fadeIn"></body>
+<body class="bg-[#0B1120] text-gray-100 animate-fadeIn">
 
-<nav class="flex justify-between items-center p-6 border-b border-gray-700">
-    <h1 class="text-xl font-bold text-blue-400">FinIntel AI</h1>
-    <a href="index.html" class="text-gray-400 hover:text-white">Home</a>
-</nav>
+    <nav class="flex justify-between items-center p-6 border-b border-gray-700">
+        <h1 class="text-xl font-bold text-blue-400">FinIntel AI</h1>
+        <a href="index.html" class="text-gray-400 hover:text-white">Home</a>
+    </nav>
 
-<div class="p-8">
+    <div class="p-8">
 
-    <!-- HEADER -->
-    <div class="flex justify-between items-center mb-8">
-        <h2 id="companyName" class="text-3xl font-bold"></h2>
-        <span id="categoryBadge" class="px-4 py-2 rounded-full text-sm"></span>
+        <!-- HEADER -->
+        <div class="flex justify-between items-center mb-8">
+            <h2 id="companyName" class="text-3xl font-bold"></h2>
+            <span id="categoryBadge" class="px-4 py-2 rounded-full text-sm"></span>
+        </div>
+
+        <!-- SCORE CARD -->
+        <div class="grid md:grid-cols-4 gap-6 mb-10">
+
+            <div class="card">
+                <p class="label">Financial Score</p>
+                <p id="score" class="value"></p>
+            </div>
+
+            <div class="card">
+                <p class="label">ROCE</p>
+                <p id="roce" class="value"></p>
+            </div>
+
+            <div class="card">
+                <p class="label">Sales Growth</p>
+                <p id="salesGrowth" class="value"></p>
+            </div>
+
+            <div class="card">
+                <p class="label">Debt/Equity</p>
+                <p id="debt" class="value"></p>
+            </div>
+
+        </div>
+
+        <!-- CHART -->
+        <div class="card mb-10">
+            <canvas id="metricsChart"></canvas>
+        </div>
+
+        <!-- PROS CONS -->
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <div class="card border-green-500 border">
+                <h3 class="text-green-400 font-semibold mb-4">Pros</h3>
+                <ul id="prosList" class="space-y-2"></ul>
+            </div>
+
+            <div class="card border-red-500 border">
+                <h3 class="text-red-400 font-semibold mb-4">Cons</h3>
+                <ul id="consList" class="space-y-2"></ul>
+            </div>
+
+        </div>
+
     </div>
 
-    <!-- SCORE CARD -->
-    <div class="grid md:grid-cols-4 gap-6 mb-10">
-
-        <div class="card">
-            <p class="label">Financial Score</p>
-            <p id="score" class="value"></p>
-        </div>
-
-        <div class="card">
-            <p class="label">ROCE</p>
-            <p id="roce" class="value"></p>
-        </div>
-
-        <div class="card">
-            <p class="label">Sales Growth</p>
-            <p id="salesGrowth" class="value"></p>
-        </div>
-
-        <div class="card">
-            <p class="label">Debt/Equity</p>
-            <p id="debt" class="value"></p>
-        </div>
-
-    </div>
-
-    <!-- CHART -->
-    <div class="card mb-10">
-        <canvas id="metricsChart"></canvas>
-    </div>
-
-    <!-- PROS CONS -->
-    <div class="grid md:grid-cols-2 gap-8">
-
-        <div class="card border-green-500 border">
-            <h3 class="text-green-400 font-semibold mb-4">Pros</h3>
-            <ul id="prosList" class="space-y-2"></ul>
-        </div>
-
-        <div class="card border-red-500 border">
-            <h3 class="text-red-400 font-semibold mb-4">Cons</h3>
-            <ul id="consList" class="space-y-2"></ul>
-        </div>
-
-    </div>
-
-</div>
-
-<script src="assets/js/api.js"></script>
-<script src="assets/js/charts.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/animations.js"></script>
+    <!-- Scripts with defer -->
+    <script src="assets/js/api.js" defer></script>
+    <script src="assets/js/charts.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/animations.js" defer></script>
 
 </body>
+
 </html>

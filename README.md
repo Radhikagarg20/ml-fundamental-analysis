@@ -244,10 +244,11 @@ cd frontend
 index.html
 ```
 
-Frontend runs at (Live Server example):
+Frontend runs at:
 http://127.0.0.1:5500
 ------
 
+---
 
 # 🌍 Production Deployment
 

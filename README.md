@@ -4,6 +4,12 @@
 
 ---
 
+## 🖼 Application Preview
+
+![FinIntel AI Dashboard](assets/images/homepage.png)
+
+---
+
 ## 🌐 Live Production Links
 
 🔹 **Frontend (Investor Dashboard)**  

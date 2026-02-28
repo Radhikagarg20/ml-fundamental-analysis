@@ -13,7 +13,7 @@ async function init() {
 const data = await fetchAnalysis(company);
 
     document.getElementById("score").innerText = data.score;
-    document.getElementById("roce").innerText = data.metrics.roe + "%";
+    document.getElementById("roce").innerText = data.metrics.roce + "%";
     document.getElementById("salesGrowth").innerText = data.metrics.sales_growth + "%";
     document.getElementById("debt").innerText = data.metrics.debt_to_equity;
 
